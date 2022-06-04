@@ -4,13 +4,19 @@ function Counter() {
   const [count, setCount] = useState(0);
 
   function upOne() {
-    setCount(count + 1);
+    // setCount(count + 1);
+    setCount((count) => count + 1);
+
   }
 
   function downOne() {
     if(count != 0){
-      setCount(count- 1)
+      // setCount(count- 1)
+            setCount((count) => count - 1);
+
     }
+
+
   }
 
 
